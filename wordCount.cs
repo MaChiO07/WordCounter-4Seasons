@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Diagnostics;
 using System.Xml.Linq;
 
-// папка с различными файлами
 namespace ConsolApp1
 {
     class Program
@@ -18,6 +17,7 @@ namespace ConsolApp1
             int WordCount = 0;
             int spacePosition = inputFrase.IndexOf(" ");
 
+            // controllo se la frase si inizia con la lettera
             if (inputFrase.Substring(0, 1) != " ")
             {
                 WordCount++;
@@ -42,14 +42,3 @@ namespace ConsolApp1
     }
 }
 
-
-// uint только положительные числа
-// byte только до 255 
-// short только до 32000 
-// int все остальные до 2 милиардов
-// long для огромных чисел
-// string "text";
-// char 'symbol';
-// bool variable = true/false;
-// для float в конце нужно ставить f (float a = 3.14f; )
-// Double это тот же float но без f в конце
